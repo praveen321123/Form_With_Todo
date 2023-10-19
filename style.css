@@ -1,0 +1,157 @@
+/* Scroll Bar Styles */
+::-webkit-scrollbar{
+    width: 9px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, rgb(1, 158, 255)60%);
+    border-radius: 6px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg,#2196f3,#ff4685);
+}
+
+
+/* form styles */
+.container_bg{
+    position: relative;
+    padding: 50px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+    
+}
+
+.container_bg .inputBox{
+    position: relative;
+    width: 350px;
+}
+
+.container_bg .inputBox input{
+    position: relative;
+    padding: 8px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background:transparent;
+    color: #fff;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    z-index: 2;
+}
+
+.container_bg .inputBox span{
+    position:absolute;
+    left:0;
+    padding: 10px 0;
+    pointer-events: none;
+    font-size: 1em;
+    transition: 0.5s;
+    color: black;
+    letter-spacing: 0.05em;
+    
+}
+
+.container_bg .inputBox input:valid~ span,
+.container_bg .inputBox input:focus~ span
+{
+    font-size: 0.85em;
+    transform: translateY(-32px);
+}
+
+.container_bg .inputBox i{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:5px;
+    background: linear-gradient(45deg,#2196f3,#ff4685);
+    transition: 0.5s;
+    z-index: 1;
+    border-radius: 4px;
+    pointer-events: none;
+
+}
+
+.container_bg .inputBox input:valid~ i,
+.container_bg .inputBox input:focus~ i
+{
+    height: 100%;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+}
+
+
+/* button styles */
+
+.container_bg button{
+    border-radius: 20px;
+}
+
+
+/* Validation elements styles */
+
+form .msg{
+   position: relative;
+   top: 30px;
+}
+
+.container_bg form .msg{
+    color: rgb(255, 0, 0);
+    margin-left: 119px;
+    z-index: 5;
+}
+
+
+/* Icon styles */
+.container_bg form .correct{
+    color: green;
+    position: relative;
+    left: 235px;
+    top: 5px;
+}
+
+.container_bg form ion-icon{
+    font-size: x-large;
+    color: rgb(233, 0, 0);
+}
+
+.container_bg form #icon1{
+    position: relative;
+    left: 110px;
+    bottom: 20px;
+}
+
+.container_bg form #icon2{
+    position: relative;
+    left: 108px;
+    bottom: 20px;
+}
+
+.container_bg form #icon3{
+    position: relative;
+    left: 98px;
+    bottom: 20px;
+}
+
+.container_bg form #icon4{
+    position: relative;
+    left: 114px;
+    bottom: 20px;
+}
+
+
+
+
+
+
+
